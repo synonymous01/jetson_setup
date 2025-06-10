@@ -26,8 +26,14 @@ wget -c https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/
 chmod +x ./ros_install_noetic.sh
 ./ros_install_noetic.sh
 
+source ~/.bashrc
+
 # Install Python 3 pip and robomaster library
 sudo apt-get install -y python3-pip
+python3 -m pip install --upgrade pip
+pip3 install scipy numpy
+pip3 install cvxopt
+pip3 install opencv-python
 pip3 install robomaster
 
 # Clone and install VS Code
